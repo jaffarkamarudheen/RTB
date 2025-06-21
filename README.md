@@ -2,7 +2,6 @@
 ```bash
 git clone https://github.com/jaffarkamarudheen/RTB.git
 cd real-time-bidding
-cp .env.example .env
 docker-compose up -d --build
 docker-compose run --rm app composer install
 docker-compose run --rm app php artisan migrate --seed
